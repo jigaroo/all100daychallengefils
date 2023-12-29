@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge</title>
+    <link rel="stylesheet" href="chall.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Contact Us
+        </h1>
+    </header>
+    <main>
+        <form action="/challeng" method="get">
+            <section>
+                <h2>How can we help you?</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your Name</label>
+                        <input type="text" name="user-name" id="username" required placeholder="fistname lastname"/>
+
+                    </li>
+                    <li>
+                        <label for="user-email">Your E-mail Address</label>
+                        <input type="email" name="user-email" id="user-email" required>
+
+                    </li>
+                    <li>
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" name="phone" id="phone" required >
+                    </li>
+                    <li>
+                        <label for="usermessage">Your message</label>
+                        <textarea name="user-message" id="usermessage" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <label for="howfindus">How did you find us?</label>
+                        <select name="howfind-us" id="howfindus">
+                            <option value="websearch">web search</option>
+                            <option value="twetter">twetter</option>
+                            <option value="instagram">instagram</option>
+                        </select>
+            </section>
+            <section>
+                <h2>How should we reply?</h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="radio" name="reply" id="dontreply" value="dontreply" required>
+                        <label for="dontreply">Don't reply</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" id="by-phone" name="reply" value="phone" required>
+                        <label for="by-phone">Call me</label>
+            
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" id="reply-email" name="reply" value="email" required>
+                        <label for="reply-email">Send me an email</label>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms">
+                    <label for="agree-terms">Agree to terms?</label>
+               </div>
+            </section>
+            <section class="btn">
+                <button id="btn" type="reset">Clear</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
