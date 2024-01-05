@@ -19,5 +19,15 @@ body{
     cursor: pointer;
 }
 .btn-alt{
-
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(140, 0, 255);
+}
+.btn:hover{
+    background-color: rgb(79, 10, 190);
+    border-color: rgb(79, 10, 190);
+}
+.btn-alt:hover{
+    background-color: rgb(234, 209, 253);
+    border-color: transparent;
 }
